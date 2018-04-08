@@ -4,12 +4,22 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
+    "start": "if-env NODE_ENV=production && yarn serve || yarn dev",
     "build": "preact build -p --dest ../dist/client",
     "serve": "preact build -p --dest ../dist/client && preact serve --dir ../dist/client",
     "dev": "preact watch",
     "lint": "eslint src",
     "test": "jest ./tests"
+  },
+  "babel": {
+    "presets": [
+      [
+        "preact-cli/babel",
+        {
+          "modules": "commonjs"
+        }
+      ]
+    ]
   },
   "eslintConfig": {
     "extends": "eslint-config-synacor"
