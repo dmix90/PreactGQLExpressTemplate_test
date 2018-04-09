@@ -1,5 +1,21 @@
 @import '../../style/common';
 
 .container{
-    color:red;
+    width: 100%;
+    padding: 20px;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color:color($defaultPalette, primary, light);
+}
+ul{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-flow: column wrap;
+    & li{
+
+    }
 }

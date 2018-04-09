@@ -16,10 +16,10 @@ const bootstrap = async () => {
     })
 
     const server = express();
-    const port = 4201;
+    const port = process.env.PORT || 4201;
 
     server.use(bodyParser.json());
-
+    // server.use('/', express.static('client'));
     server.use('/graphql', cors(), graphqlHTTP({
         schema: schema,
         graphiql: true,

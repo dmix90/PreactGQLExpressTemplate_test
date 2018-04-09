@@ -12,7 +12,9 @@
     "build_server": "cd ./server && tsc --sourceMap false --lib esnext",
     "dev": "concurrently --kill-others \"yarn dev_client\" \"yarn dev_server\"",
     "build": "yarn build_server && yarn build_client",
-    "production": "yarn build && concurrently --kill-others \"cd ./dist && yarn server\" \"serve -s ./dist/client\""
+    "production": "yarn build && concurrently --kill-others \"cd ./dist && yarn server\" \"serve -s ./dist/client\"",
+    "pt": "yarn build && (cd ./dist && yarn server)",
+    "t": "cd ./dist && yarn server"
   },
   "dependencies": {
     "serve": "^6.5.3",

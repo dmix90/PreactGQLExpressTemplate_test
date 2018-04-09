@@ -35,7 +35,9 @@
     "jest": "^21.2.1",
     "node-sass": "^4.8.3",
     "preact-cli": "^2.1.0",
+    "preact-redux": "^2.0.3",
     "preact-render-spy": "^1.2.1",
+    "redux": "^3.7.2",
     "sass-loader": "^6.0.7",
     "spectre.css": "^0.5.1"
   },
